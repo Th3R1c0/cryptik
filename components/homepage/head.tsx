@@ -1,10 +1,9 @@
 import React from 'react';
 
-const MainSection = () => {
+const Navigation = () => {
   return (
-    <div>
-
-      {/* slide in navigation */}
+    <>
+            {/* slide in navigation */}
       <div className=" flex flex-col w-screen hidden absolute z-10 top-0 bg-white h-screen">
         {/* remove the "hidden" class attribute to see the slide in navigation */}
         {/* exit button section */}
@@ -135,80 +134,87 @@ const MainSection = () => {
           </div>
         </div>
       </div>
-      {/* home page */}
-      <div className=" h-[480px] bg-[#191B21] flex flex-col justify-around w-screen">
-        {/* top part */}{' '}
-        <div className=" space-y-10 lg:px-20 px-5">
-          <div className=" text-white flex flex-col space-y-5 whitespace-nowrap">
-            <h1 className=" font-bold text-3xl md:text-5xl">
-              Buy and sell crypto{' '}
-              <p className=" hidden sm:inline-block"> in minutes</p>
-            </h1>
-            <p className=" text-md">join the worlds largest crypto exchange</p>
-            <button className=" bg-[#E5C233] p-2  rounded  h-full  text-black">
-              Register
-            </button>
-          </div>
-          {/* slides */}
-          <div className=" flex w-full h-[150px] space-x-4 ">
-            {/* will implement a sliding libary for a slideshow of slides when in mobile and tablet view */}
-            <a href="#" className=" lg:w-[20%]  sm:w-1/2 w-full">
-              <div className=" h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-md"></div>
-            </a>
-            <a href="#" className=" lg:w-[20%] sm:w-1/2">
-              <div className=" h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-md"></div>
-            </a>
-            <a href="#" className=" w-[20%] hidden lg:block ">
-              <div className=" h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-md"></div>
-            </a>
-            <a href="#" className=" w-[20%] hidden lg:block ">
-              <div className=" h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-md"></div>
-            </a>
-            <a href="#" className=" w-[20%] hidden lg:block ">
-              <div className=" h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-md"></div>
-            </a>
-          </div>
-        </div>
+    </>
+  )
+}
+
+const T = () => {
+  return (
+    <div
+  className=" h-[480px] bg-[#191B21] flex flex-col justify-around w-screen border-green-700 border-2 ">
+
+    {/* top part */}{' '}
+      <div className=" space-y-10 lg:px-20 px-5">
+      <div className=" text-white flex flex-col space-y-5 whitespace-nowrap">
+        <h1 className=" font-bold text-3xl md:text-5xl">
+          Buy and sell crypto{' '}
+          <p className=" hidden sm:inline-block"> in minutes</p>
+        </h1>
+        <p className=" text-md">join the worlds largest crypto exchange</p>
+        <button className=" bg-[#E5C233] p-2  rounded  h-full  text-black">
+          Register
+        </button>
       </div>
-      {/* slide container */}
-      <div className=" bg-[#191B21]">
-        <div className=" p-4 bg-white rounded-t-3xl">
-          {/* slides */}
-          <div className=" flex w-full h-[150px] sm:space-x-4">
-            {/* will implement a sliding libary for a slideshow of slides when in mobile and tablet view */}
-            <a href="#" className=" lg:w-[20%]  sm:w-1/2 w-full">
-              <div className=" h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-md"></div>
-            </a>
-            <a href="#" className=" lg:w-[20%] sm:w-1/2">
-              <div className=" h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-md"></div>
-            </a>
-            <a href="#" className=" w-[20%] hidden lg:block ">
-              <div className=" h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-md"></div>
-            </a>
-            <a href="#" className=" w-[20%] hidden lg:block ">
-              <div className=" h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-md"></div>
-            </a>
-            <a href="#" className=" w-[20%] hidden lg:block ">
-              <div className=" h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-md"></div>
-            </a>
-          </div>
-        </div>
+      {/* slides */}
+      <div className=" flex w-full h-[150px] space-x-4 ">
+        {/* will implement a sliding libary for a slideshow of slides when in
+        mobile and tablet view */}
+        <a href="#" className=" lg:w-[20%]  sm:w-1/2 w-full">
+          <div
+            className=" h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-md"
+          ></div>
+        </a>
+        <a href="#" className=" lg:w-[20%] sm:w-1/2">
+          <div
+            className=" h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-md"
+          ></div>
+        </a>
+        <a href="#" className=" w-[20%] hidden lg:block ">
+          <div
+            className=" h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-md"
+          ></div>
+        </a>
+        <a href="#" className=" w-[20%] hidden lg:block ">
+          <div
+            className=" h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-md"
+          ></div>
+        </a>
+        <a href="#" className=" w-[20%] hidden lg:block ">
+          <div
+            className=" h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-md"
+          ></div>
+        </a>
       </div>
-      {/* announcements */}
-      <div className=" flex flex-col px-5 py-5">
-        <div>
-          special notice about binance nfts and the marketplace{' '}
-          <a className=" text-yellow-500" href="#">
-            More
-          </a>
-        </div>
-        <div>
-          Special christmass sale on NFTs{' '}
-          <a className=" text-yellow-500" href="#">
-            More
-          </a>
-        </div>
-      </div>
+     </div>
+    </div>  
+  )
+}
+
+
+
+
+const MainSection = () => {
+  return (
+    <div>
+
+{/* home page */}
+<T />
+{/* slide container */}
+{/* announcements */}
+<div className=" flex flex-col px-5 py-5">
+  <div>
+    special notice about binance nfts and the marketplace{' '}
+    <a className=" text-yellow-500" href="#">
+      More
+    </a>
+  </div>
+  <div>
+    Special christmass sale on NFTs{' '}
+    <a className=" text-yellow-500" href="#">
+      More
+    </a>
+  </div>
+</div>
       
     </div>
   );
